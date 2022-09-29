@@ -1,88 +1,33 @@
-# Tiny_polybar
-Hello everyone to create a tiny polybar we need to do few steps
 
-# create a second bar in polybar conf
+# Tiny_polybar/betterTray
 
-[bar/tray]
+Does your polybar tray displays on top of your fullscreen apps like this ?
+![App Screenshot](https://cloud.githubusercontent.com/assets/13619272/22828571/21d052ae-efc6-11e6-9763-f200f62cb37d.png)
+or this ? <br>
+![App Screenshot](https://user-images.githubusercontent.com/31759042/34931639-079a995c-f9d0-11e7-94c7-27dea7563120.png)
+<br> or you just want a fancy tray in polybar ?
+### **here's the solution** *with no extra packages* 
+![09_29_07_51__2__AdobeExpress](https://user-images.githubusercontent.com/75220043/193121853-a41ae64b-eceb-4889-98d3-4f1f5898679b.gif)
 
-monitor-strict = false
+## System Requirements
+* polybar 
+* pyhthon >= 3.6 (almost every distro comes with this)
+## Installation
+1. `git clone --detpth=1 https://github.com/AmmarHaddadi/betterTray`
 
-width = 20
+2. `cd betterTray`
 
-height = 25
+3.  copy the content of `CopyMe.ini` into your Polybar config (`~/.config/polybar/config.ini`) 
 
-offset-x = 98% ######### offset values only dtermine the position of bar in the screen set it accordingly to your need
+5. `cp tray.py ~/.config/polybar/scripts/`
+>(create the scrpits folder if u don't have it already otherwise to use your preferred folder you need to edit the config)
 
-offset-y = 35   
+6. add `arrow` to your Polybar modules 
 
-
-
-override-redirect = true  ############### to make offset vales to work override-direct value must be true
-
-fixed-center = true
-
-background = ${colors.modules-right-background}
-
-;foreground = ${colors.foreground}
-
-radius = 8
-
-line-size = 0
-
-line-color = #f00
+7. adjust the config to your screen 
+> the config has a lot of comments explaining the use of each line 
 
 
-padding-left = 0
-
-padding-right = 1
-
-module-margin-left = 0
-
-module-margin-right = 0
+    
 
 
-modules-right =  sep
-
-tray-position = right
-
-tray-detached = false
-
-tray-offset-x = 0
-
-tray-offset-y = 0
-
-tray-padding = 1
-
-tray-maxsize = 20
-
-tray-scale = 1.0
-
-tray-background = ${colors.background}
-
-############################################################################
-
-# create a module to access the bar
-
-[module/arrow]
-
-type = custom/script
-
-exec = echo ""
-
-click-left = bash $HOME/.config/polybar/tinybar.sh
-
-click-right = bash $HOME/.config/polybar/killbar.sh
-
-
-############################################################################
-
-# finally create two scripts to use the bar
-First script to launch the bar...
-
-Second script to kill the bar...
-
-the kill script only kill the newly created bar not the whole bar
-
-
-
-######################################
