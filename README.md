@@ -90,7 +90,7 @@ click-right = bash $HOME/.config/polybar/killbar.sh
 
 3. Click left (tinybar) is used to launch the bar. Click right (kill bar) is used to close tiny bar.
 
-######################################
+##
 
 - First script to launch the bar.
 - Second script to kill the bar.
