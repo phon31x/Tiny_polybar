@@ -16,7 +16,13 @@ cp tinybar.sh killbar.sh ~/.config/polybar
 ```
 
 ## Usage example
-1. Create a second bar in your polybar config. Example of a bar:
+1. Change a polybar name in tinybar.sh
+
+```bash
+polybar tray (name of your bar here instead of tray) >> /tmp/polybar2.log 2>&1
+```
+
+2. Create a second bar in your polybar config. Example of a bar:
 
 
 ```ini
@@ -76,7 +82,7 @@ tray-scale = 1.0
 tray-background = ${colors.background}
 ```
 
-2. Create a module to access the bar 
+3. Create a module to access the bar 
 
 ```ini
 
@@ -91,14 +97,10 @@ click-left = bash $HOME/.config/polybar/tinybar.sh
 click-right = bash $HOME/.config/polybar/killbar.sh
 ```
 
-3. Click left (tinybar) is used to launch the bar. Click right (kill bar) is used to close tiny bar.
+4. Click left (tinybar) is used to launch the bar. Click right (kill bar) is used to close tiny bar.
 
 ##
 
 - First script to launch the bar.
 - Second script to kill the bar.
 - The kill script only kill the newly created bar not the whole bar.
-
-
-
-
