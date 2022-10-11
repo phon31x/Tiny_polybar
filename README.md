@@ -3,6 +3,7 @@ Hello everyone to create a tiny polybar we need to do few steps
 
 # create a second bar in polybar conf
 
+```ini
 [bar/tray]
 
 monitor-strict = false
@@ -58,6 +59,7 @@ tray-maxsize = 20
 tray-scale = 1.0
 
 tray-background = ${colors.background}
+```
 
 ############################################################################
 
