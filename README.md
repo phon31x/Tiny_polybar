@@ -29,7 +29,6 @@ offset-x = 98% ######### offset values only dtermine the position of bar in the 
 offset-y = 35   
 
 
-
 override-redirect = true  ############### to make offset vales to work override-direct value must be true
 
 fixed-center = true
