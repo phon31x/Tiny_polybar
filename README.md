@@ -8,7 +8,7 @@ Example:
 ```bash
 git clone https://github.com/phon31x/Tiny_polybar
 cd Tiny_polybar
-mv tinybar.sh killbar.sh arrow.ini ~/.config/polybar
+cp tinybar.sh killbar.sh ~/.config/polybar
 ```
 
 # Usage example
