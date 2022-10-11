@@ -1,6 +1,8 @@
 ## Tiny_polybar
 A tiny polybar for hiding tray icons and modules that are rarely used.
 
+https://user-images.githubusercontent.com/45850093/195207931-293342a2-e7dd-4028-9778-e6a4f6176869.mp4
+
 ## Installation
 Clone this repository and move the files to your polybar config location.
 
