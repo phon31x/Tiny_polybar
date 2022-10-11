@@ -65,6 +65,8 @@ tray-background = ${colors.background}
 
 # create a module to access the bar
 
+```ini
+
 [module/arrow]
 
 type = custom/script
@@ -74,7 +76,7 @@ exec = echo ""
 click-left = bash $HOME/.config/polybar/tinybar.sh
 
 click-right = bash $HOME/.config/polybar/killbar.sh
-
+```
 
 ############################################################################
 
