@@ -1,7 +1,7 @@
-# Tiny_polybar
+## Tiny_polybar
 A tiny polybar for hiding tray icons and modules that are rarely used.
 
-# Installation
+## Installation
 Clone this repository and move the files to your polybar config location.
 
 Example:
@@ -11,7 +11,7 @@ cd Tiny_polybar
 cp tinybar.sh killbar.sh ~/.config/polybar
 ```
 
-# Usage example
+## Usage example
 1. Create a second bar in your polybar config. Example of a bar:
 
 
