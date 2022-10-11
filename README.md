@@ -101,6 +101,6 @@ click-right = bash $HOME/.config/polybar/killbar.sh
 
 ##
 
-- First script to launch the bar.
-- Second script to kill the bar.
+- Tinybar.sh a script to launch the bar.
+- Killbar.sh a script to kill the bar.
 - The kill script only kill the newly created bar not the whole bar.
