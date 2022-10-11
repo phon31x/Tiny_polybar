@@ -1,7 +1,19 @@
 # Tiny_polybar
-Hello everyone to create a tiny polybar we need to do few steps
+A tiny polybar for hiding tray icons and modules that are rarely used.
 
-# create a second bar in polybar conf
+# Installation
+Clone this repository and move the files to your polybar config location.
+
+Example:
+```bash
+git clone https://github.com/phon31x/Tiny_polybar
+cd Tiny_polybar
+mv tinybar.sh killbar.sh arrow.ini ~/.config/polybar
+```
+
+# Usage example
+1. Create a second bar in your polybar config. Example of a bar:
+
 
 ```ini
 [bar/tray]
@@ -61,9 +73,7 @@ tray-scale = 1.0
 tray-background = ${colors.background}
 ```
 
-############################################################################
-
-# create a module to access the bar
+2. Create a module to access the bar 
 
 ```ini
 
@@ -78,15 +88,14 @@ click-left = bash $HOME/.config/polybar/tinybar.sh
 click-right = bash $HOME/.config/polybar/killbar.sh
 ```
 
-############################################################################
-
-# finally create two scripts to use the bar
-First script to launch the bar...
-
-Second script to kill the bar...
-
-the kill script only kill the newly created bar not the whole bar
-
-
+3. Click left (tinybar) is used to launch the bar. Click right (kill bar) is used to close tiny bar.
 
 ######################################
+
+First script to launch the bar...
+Second script to kill the bar...
+The kill script only kill the newly created bar not the whole bar
+
+
+
+
