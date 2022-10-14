@@ -1,3 +1,6 @@
+# Based on idea https://github.com/phon31x/Tiny_polybar from @phon31x @pietryszak (Github)
+# Python version https://github.com/AmmarHaddadi/betterTray from @AmmarHaddadi (Github)
+
 import subprocess
 #replace tray with ur tray bar name ([bar/'name'])or keep it tray   
 name = "tray"
